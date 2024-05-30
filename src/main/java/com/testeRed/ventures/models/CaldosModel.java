@@ -14,7 +14,14 @@ public class CaldosModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idCaldo;
     private String name;
-    private BigDecimal value;
+    private double value;
+
+    //Construtor deve ser comentado quando for utilzar o banco de dados real
+    public CaldosModel(UUID idCaldo, String name, double value) {
+        this.idCaldo = idCaldo;
+        this.name = name;
+        this.value = value;
+    }
 
     public UUID getIdCaldo() {
         return idCaldo;
@@ -32,11 +39,11 @@ public class CaldosModel implements Serializable {
         this.name = name;
     }
 
-    public BigDecimal getValue() {
+    public double getValue() {
         return value;
     }
 
-    public void setValue(BigDecimal value) {
+    public void setValue(double value) {
         this.value = value;
     }
 
