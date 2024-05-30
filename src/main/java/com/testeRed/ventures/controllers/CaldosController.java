@@ -33,13 +33,13 @@ public class CaldosController {
     @GetMapping("/broths")
     public ResponseEntity<List<CaldosModel>> getAllCaldos(){
         List<CaldosModel> caldos = new ArrayList<>();
-        caldos.add(new CaldosModel(UUID.fromString("f128cbd8-d2f5-40d1-9e71-4da31ede020f"), "Miso",  25.90));
-        caldos.add(new CaldosModel(UUID.fromString("69e7c4f7-74d9-442e-bc3a-25f6b2c7a9c8"), "Tonkotsu", 32));
-        caldos.add(new CaldosModel(UUID.fromString("a3d3e60f-5f14-4773-9f85-ace5c5a29b9e"), "Kare", 34.49));
-        caldos.add(new CaldosModel(UUID.fromString("d9b38c6f-5a2d-4fa8-b89c-1e1bafe1e4a7"), "Tantanmen", 10.30));
+       
+        caldos.add(new CaldosModel(UUID.fromString("f128cbd8-d2f5-40d1-9e71-4da31ede020f"), "https://tech.redventures.com.br/icons/salt/inactive.svg","https://tech.redventures.com.br/icons/salt/active.svg","Miso","Simple like the seawater, nothing more", 25.90));
+        caldos.add(new CaldosModel(UUID.fromString("69e7c4f7-74d9-442e-bc3a-25f6b2c7a9c8"), "https://tech.redventures.com.br/icons/salt/inactive.svg","https://tech.redventures.com.br/icons/salt/active.svg","Tonkotsu","Simple like the seawater, nothing more", 32));
+        caldos.add(new CaldosModel(UUID.fromString("a3d3e60f-5f14-4773-9f85-ace5c5a29b9e"), "https://tech.redventures.com.br/icons/salt/inactive.svg","https://tech.redventures.com.br/icons/salt/active.svg","Kare","Simple like the seawater, nothing more", 34.49));
+        caldos.add(new CaldosModel(UUID.fromString("d9b38c6f-5a2d-4fa8-b89c-1e1bafe1e4a7"), "https://tech.redventures.com.br/icons/salt/inactive.svg","https://tech.redventures.com.br/icons/salt/active.svg","Tantanmen","Simple like the seawater, nothing more", 10.30));
         return ResponseEntity.status(HttpStatus.OK).body(caldos);
     }
-
 
 
 //    Passando valores com banco de dados
