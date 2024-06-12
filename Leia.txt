@@ -1,0 +1,22 @@
+Bom:
+- Como solicitado criei os endpoint de população de lista de caldos, proteinas e Pedidos
+- Fiz com base spring boot usando de jpa hibernate e utilizando banco de dados mysql.
+- Utilizei para modelo de teste forma de lista, isso claro que para exemplo pois não consigo subir o BD, POREM se rodar com o BD, funciona normalmente, fiz apenas para demonstração mais rapida
+- Utilizei também endpoints de atualização, delete e criação, famoso crud para bd
+- Utilizei de rest para poder sair os json tranquilamente conforme solicitado pela docuentação
+- Testes feitos com postman simples
+- Projeto simples e divido em padrão MVC
+- GIT
+- Classe order simples, validações a se desenolver, como validação de estoque, produto, preço, data-horario
+- Foi usado UUID generico apenas para fins de teste em relação a lista fixa
+
+
+Contras
+- Não consegui testar no ambiente solicitado, fiquei confuso, mas acredito que com um auxilio, de resto é tranquilo demais sendo que o mais "complicado" é fazer a api funcionar.
+- Não consegui subir banco de dados para demonstração, porem a arquitetura atual do BD. está como update, então apenas basta criar e set o BD, que as tables serão criadas
+- Não consegui subir o projeto em si para ser acessado por outra maquina, tentei pelo git, mas tive problema de CORS.
+
+Obs: Estou disponivel para demonstrar o mesmo rodando em ambiente local e para explicar o codigo.
+Utilizei spring pois é uma tecnologia na qual pretendo focar como dev Pleno, estou aprimorando e com o desafio haha me desafiei fazer com ele haha
+
+
